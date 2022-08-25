@@ -1,0 +1,10 @@
+.titulo {
+    color: rgb(133, 185, 185);
+    text-align: center;
+}
+
+.imagem {
+    height: 10rem;
+    width: 10rem;
+    background-color: rgba(173, 161, 144, 0.63);
+}
