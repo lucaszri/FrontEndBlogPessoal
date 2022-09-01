@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 function Navbar() {
     return (
         <>
-            <AppBar position="static">
-                <Toolbar variant="dense">
+            <AppBar className='navbar-1' position="static">
+                <Toolbar className='navbar-1' variant="dense">
                     <Box style={{ cursor: "pointer" }} >
                         <Typography variant="h5" color="inherit">
                             BlogPessoal
