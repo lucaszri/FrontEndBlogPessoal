@@ -1,5 +1,52 @@
-.navbar-1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 200px !important;
-    
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script&family=IBM+Plex+Serif&family=Lobster+Two&family=Luckiest+Guy&family=Playfair+Display:wght@400;800&family=Smooch+Sans:wght@100&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+
+.navbar-barra {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(26, 24, 24);
+    height: 100% !important; 
+}
+
+.itens-navbar {
+    display: flex;
+    justify-items: center;
+    width: 52%;
+    justify-content:space-around; 
+}
+
+.itens-navbar p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Trocchi', serif !important;
+    color: rgb(27, 26, 26) !important;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    color: #fffbf8 !important;
+}
+
+.img-navbar {
+    display: flex;
+    justify-items: center !important;
+}
+
+.borda-btn {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgba(14, 12, 12, 0.699);
+    border-radius: 0.8rem;
+}
+
+.borda-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: #ff914d;
+}
+
+.img-navbar:hover {
+    content: url("https://i.ibb.co/3CB911Q/Logotipo-empresa-de-programa-o-sistemas-e-tecnologia-2.png");
+    transform: scale(0.9);
+    transition: all 1.5s;
 }

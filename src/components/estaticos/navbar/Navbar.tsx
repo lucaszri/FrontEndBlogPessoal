@@ -1,44 +1,43 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
+import './Navbar.css'
+
 function Navbar() {
     return (
         <>
-            <AppBar className='navbar-1' position="static">
-                <Toolbar className='navbar-1' variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            BlogPessoal
-                        </Typography>
+            <AppBar>
+                <Toolbar className='navbar-barra'>
+                    <Box className='img-navbar'>
+                            <img src="https://i.ibb.co/P6fcyZT/Logotipo-empresa-de-programa-o-sistemas-e-tecnologia-3.png" alt="" />
                     </Box>
-
-                    <Box display="flex" justifyContent="start">
+                    <Box className='itens-navbar'>
                         <Link to='/home' className='text-decoration-none'>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="h6" color="inherit">
-                                    home
+                            <Box className='borda-btn'>
+                                <Typography>
+                                    Home
                                 </Typography>
                             </Box>
                         </Link>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                postagens
+                        <Box className='borda-btn'>
+                            <Typography>
+                                Postagens
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                temas
+                        <Box className='borda-btn'>
+                            <Typography>
+                                Temas
                             </Typography>
                         </Box>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                        <Box className='borda-btn'>
+                            <Typography>
+                                Cadastrar temas
                             </Typography>
-                        </Box>
+                        </Box >
                        <Link to='/login' className='text-decoration-none'>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="h6" color="inherit">
-                                    logout
+                            <Box className='borda-btn'>
+                                <Typography>
+                                    Logout
                                 </Typography>
                             </Box>
                        </Link>
