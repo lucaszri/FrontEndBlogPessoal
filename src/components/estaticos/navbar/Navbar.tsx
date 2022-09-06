@@ -1,9 +1,19 @@
 import React from 'react';
 import { AppBar, Toolbar, Typography, Box } from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'
+import useLocalStorage from 'react-use-localstorage';
 
 function Navbar() {
+    const [token, setToken] = useLocalStorage('token');
+    let history = useNavigate()
+
+    function goLogout() {
+        setToken('')
+        alert('Usuário deslogado')
+        history('/login')
+    }
+    
     return (
         <>
             <AppBar>
@@ -19,28 +29,34 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Box className='borda-btn'>
+                        <Link to='/Postagem' className='text-decoration-none'>
+                            <Box className='borda-btn'>
                             <Typography>
                                 Postagens
                             </Typography>
-                        </Box>
+                            </Box>
+                            </Link>
+                        
                         <Box className='borda-btn'>
+                        <Link to='/Tema' className='text-decoration-none'>
                             <Typography>
                                 Temas
                             </Typography>
+                        </Link>
                         </Box>
                         <Box className='borda-btn'>
+                        <Link to='/formularioTema' className='text-decoration-none'>
                             <Typography>
                                 Cadastrar temas
                             </Typography>
+                            </Link>
                         </Box >
-                       <Link to='/login' className='text-decoration-none'>
-                            <Box className='borda-btn'>
+                            <Box className='borda-btn' onClick={goLogout}>
                                 <Typography>
                                     Logout
                                 </Typography>
                             </Box>
-                       </Link>
+
                     </Box>
 
                 </Toolbar>
