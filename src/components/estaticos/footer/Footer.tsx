@@ -21,7 +21,7 @@ function Footer() {
       <Grid className='container-footer' alignItems="center" item xs={12}>
         <Box>
           <Box display="flex" alignItems="center" justifyContent="center">
-            <Typography >Me siga nas minhas redes sociais </Typography>
+            <Typography >Me siga nas redes sociais </Typography>
           </Box>
           <Box className='icons-footer' display="flex" alignItems="center" justifyContent="center">
             <a href="https://www.instagram.com/lucaszri/" target="_blank">
