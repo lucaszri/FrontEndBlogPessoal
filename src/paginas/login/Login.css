@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script&family=IBM+Plex+Serif&family=Lobster+Two&family=Luckiest+Guy&family=Playfair+Display:wght@400;800&family=Smooch+Sans:wght@100&family=Vollkorn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 
+
+label {
+    font-family: 'Trocchi', serif !important;
+    font-size: 0.9rem !important;
+    
+}
+
 .text-decoration-none {
     text-decoration: none;
 }
@@ -28,8 +35,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 25rem;
-    width: 25rem;
+    height: 29rem;
+    width: 21rem;
 
 /* From https://css.glass */
 background: rgba(255, 255, 255, 0.582);
@@ -37,7 +44,10 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7px);
 -webkit-backdrop-filter: blur(5px);
-border: 1px solid rgb(0, 0, 0);
+border: 1px solid rgb(182, 169, 169) !important;
+
+box-shadow:  7px 7px 16px #775314,
+             -2px -2px 8px #ff973f;
 }
 
 .form-login {
@@ -61,23 +71,54 @@ border: 1px solid rgb(0, 0, 0);
     height: 4rem;
     margin-bottom: 0.6rem !important;
     border: 10px !important;
+    color: white !important;
+    font-family: 'Trocchi', serif !important;
+    font-size: 0.9rem !important;
 }
+
+
+
 
 .btn-login {
-    background-color:  rgba(14, 12, 12, 0.897) !important; 
-    color: #ffffff !important;
-    padding: 0.5rem !important;
-    width: 4rem !important;
-    border-radius: 0.6rem !important;
     font-family: 'Trocchi', serif !important;
-    font-size: 0.7rem !important;
-}
-
-.btn-login:hover {
-    transform: scale(1.1);
-    transition: all 0.3s;
+    font-size: 0.9rem !important;
+    font-weight: 200 !important;
+    color: black !important;
+    letter-spacing: 1px !important;
+    padding: 13px 20px 13px !important;
+    outline: 0 !important;
+    border: 1px solid black !important;
+    cursor: pointer !important;
+    position: relative !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    touch-action: manipulation !important;
+  }
+  
+  .btn-login:after {
+    content: "" !important;
     background-color: #ff914d !important;
-}
+    width: 100% !important;
+    z-index: -1 !important;
+    position: absolute !important;
+    height: 100% !important;
+    top: 7px !important;
+    left: 7px !important;
+    transition: 0.3s !important;
+    color: black !important;
+  }
+  
+  .btn-login:hover:after {
+    top: 0px !important;
+    left: 0px !important;
+  }
+  
+  @media (min-width: 768px) {
+    .btn-login {
+      padding: 13px 50px 13px !important;
+    }
+  }
 
 .cadastre-login {
     display: flex;
@@ -109,12 +150,35 @@ border: 1px solid rgb(0, 0, 0);
 }
 
 .txt1-login1 p:hover {
-    transform: scale(1.1);
+    transform: scale(1);
     transition: all 0.3s;
+    color: #ff973f;
     border: 0.3rem;
     border-color: black;
 }
 
 .txt1-login p {
     font-size: 15px;
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    font-family: 'Trocchi', serif !important;
+    font-size: 0.9rem !important;
+    letter-spacing: inherit;
+    color: black;
+    padding: 4px 0 5px;
+    border: 0;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    -webkit-animation-name: mui-auto-fill-cancel;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-animation-duration: 10ms;
+    animation-duration: 10ms;
+    padding: 16.5px 14px;
 }

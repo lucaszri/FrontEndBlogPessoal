@@ -1,0 +1,24 @@
+.container-footer {
+    background-color: rgb(26, 24, 24);
+    font-family: 'Trocchi', serif !important;
+    color: white !important;
+}
+
+.container-footer p {
+    
+    align-items: center;
+    font-family: 'Trocchi', serif !important;
+    color: white !important;
+    font-size: 0.8rem !important;
+}
+
+
+
+.footer-copy {
+    padding: 1rem;
+}
+
+a:-webkit-any-link {
+    color: rgb(248, 239, 222) !important;
+}
+

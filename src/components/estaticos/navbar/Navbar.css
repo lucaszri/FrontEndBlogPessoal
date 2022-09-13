@@ -35,18 +35,26 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    background-color: rgba(14, 12, 12, 0.699);
-    border-radius: 0.8rem;
+    --bg: rgb (26, 24, 24);
+    --hover-bg: #ff904c;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 4px;
+    background: var(--bg);
+    transition: 0.2s;
+}
+
+.borda-btn:active {
+    transform: translate(0);
+  box-shadow: none;
 }
 
 .borda-btn:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
-    background-color: #ff914d;
-}
-
-.img-navbar:hover {
-    content: url("https://i.ibb.co/3CB911Q/Logotipo-empresa-de-programa-o-sistemas-e-tecnologia-2.png");
-    transform: scale(0.9);
-    transition: all 1.5s;
-}
+    color: var(--hover-text);
+  transform: translate(-0.25rem,-0.25rem);
+  background: var(--hover-bg);
+  box-shadow: 0.25rem 0.25rem var(--bg);
+   }
+   
+   
