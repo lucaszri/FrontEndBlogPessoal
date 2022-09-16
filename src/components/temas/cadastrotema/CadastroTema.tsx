@@ -57,6 +57,7 @@ function CadastroTema() {
             setTema({
                 ...tema,
                 [e.target.name]: e.target.value,
+                postagem:[{}]
             })
     
         }
@@ -72,7 +73,16 @@ function CadastroTema() {
                         'Authorization': token
                     }
                 })
-                alert('Tema atualizado com sucesso');
+                toast.success('Tema criado com sucesso', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                    });
             } else {
                 post(`/Tema`, tema, setTema, {
                     headers: {
