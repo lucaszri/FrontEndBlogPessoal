@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {Typography, Box, Grid, Button} from '@mui/material';
+import { Typography, Box, Grid, Button } from '@mui/material';
 import './Home.css';
 import TabPostagem from '../../components/postagens/tabpostagem/TabPostagem';
 import ModalPostagem from '../../components/postagens/modalpostagem/ModalPostagem';
@@ -12,39 +12,42 @@ function Home() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
         (state) => state.tokens
     );
-    
+
     useEffect(() => {
-      if (token == "") {
-          alert("Você precisa estar logado")
-          history("/login")
-  
-      }
-  }, [token])
+        if (token == "") {
+            alert("Você precisa estar logado")
+            history("/login")
+
+        }
+    }, [token])
 
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
-                <Grid alignItems="center" item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" style={{ color: "white", fontWeight: "bold" }}>Seja bem vindo(a)!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" style={{ color: "white", fontWeight: "bold" }}>expresse aqui os seus pensamentos e opiniões!</Typography>
+            <Box className="container-home">
+                <Box className="inicioHome">
+                    <Box className="txtHome">
+                        <Typography className='fraseHome'> Hi everyone, my name is </Typography>
+                        <Typography className='nomeHome'> LUCAS  </Typography>
+                        <Typography className='nomeHome'> SOUZA </Typography>
+                        <Typography className='fraseHome'> i'm passionate  </Typography>
+                        <Typography className='fraseHome'> FULLSTACK DEVELOPER </Typography>
+                            <Box className='modalHome'>
+                                <Box className='btnModal'>
+                                    <ModalPostagem />
+                                </Box>
+                                <Box className="btnVerpost">
+                                <Link to="/Postagem">
+                                    <Button className='btnVerPost'>Ver Postagens</Button>
+                                </Link>
+                                </Box>
+                            </Box>
                     </Box>
-                    <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
-                        <Link to="/Postagem">
-                        <Button variant="outlined" style={{ borderColor: "white", backgroundColor: "#3F51B5", color: "white" }}>Ver Postagens</Button>
-                        </Link>
+                    <Box className="imgHome">
+                        <img src="https://i.ibb.co/cN5gh16/Design-sem-nome-36.png" alt="" />
                     </Box>
-                </Grid>
-                <Grid item xs={6} >
-                    <img src="https://i.imgur.com/H88yIo2.png" alt="" width="500px" height="500px" />
-                </Grid>
-                <Grid xs={12} style={{ backgroundColor: "white" }}>
-                    <TabPostagem />
-                </Grid>
-            </Grid>
+                </Box>
+
+            </Box>
         </>
     );
 }

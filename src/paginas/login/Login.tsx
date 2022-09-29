@@ -83,7 +83,7 @@ function Login() {
                     </Box>
                     <Box className='txt1-login1'>
                     <Link to='/cadastrousuario'>
-                    <Typography>Cadastre-se!</Typography>
+                    <Typography>Cadastre-se</Typography>
                     </Link>
                     </Box>
                 </Box>

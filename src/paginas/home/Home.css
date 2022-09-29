@@ -1,10 +1,70 @@
-.titulo {
-    color: rgb(133, 185, 185);
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script&family=IBM+Plex+Serif&family=Lobster+Two&family=Luckiest+Guy&family=Playfair+Display:wght@400;800&family=Smooch+Sans:wght@100&family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.container-home {
+    width: 100% !important;
+    height: 50rem !important;
 }
 
-.imagem {
-    height: 10rem;
+.inicioHome {
+    display: flex;
+    justify-content:space-between;
+    background-color: #1a1818;
+}
+
+.txtHome {
+    text-align: center;
+    margin-top: 15% !important;
+    margin-left: 20% !important;
+    color: #fff !important;
+}
+
+.imgHome {
+    margin-top: 3% !important;
+    margin-right: 10% !important;
+}
+
+.nomeHome {
+    font-size: 50px !important;
+    font-family: 'Trocchi', serif !important;
+}
+
+.fraseHome {
+font-family: 'Roboto Slab', serif !important;
+font-size: 12px !important;  
+color: #ff904c !important;
+}
+
+.modalHome {
+    color: #1a1818;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    font-family: 'Trocchi', serif !important;
+    margin-top: 5%;
+}
+
+.btnModal {
+    background-color: #fff;
+    font-size: 12px !important;
     width: 10rem;
-    background-color: rgba(173, 161, 144, 0.63);
+    font-family: 'Trocchi', serif !important;
+}
+
+.btnVerpost {
+    background-color: #fff;
+    margin-left: 3px;
+    width: 10rem;
+    font-family: 'Trocchi', serif !important;
+}
+
+.btnVerpost button {
+    font-family: 'Trocchi', serif !important;
+    align-items: center;
+    font-size: 12px !important;
+    text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
 }
