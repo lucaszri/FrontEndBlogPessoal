@@ -1,3 +1,33 @@
-h1 {
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+.barraTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1818 !important;
+    padding-top: 3rem !important;
+    padding-bottom: 1rem !important;
 }
+
+.MuiTab-textColorInherit {
+    color: #1a1818 !important;
+    background-color:#ff904c !important;
+    text-decoration: none !important;
+    opacity: 1 !important;
+    font-size: 10px !important;
+    font-family: 'Trocchi', serif !important;
+}
+
+
+.btnMargin {
+    margin-right: 1rem !important;
+}
+
+.btnMargin:hover {
+    background-color: #1a1818 !important;
+    color: #ff904c !important;
+    letter-spacing: 1px;
+}
+

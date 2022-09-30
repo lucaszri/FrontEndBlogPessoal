@@ -2,10 +2,13 @@
     background-color: rgb(26, 24, 24);
     font-family: 'Trocchi', serif !important;
     color: white !important;
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
 }
 
 .container-footer p {
-    
     align-items: center;
     font-family: 'Trocchi', serif !important;
     color: white !important;

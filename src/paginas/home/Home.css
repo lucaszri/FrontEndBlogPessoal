@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+body {
+    height: 200rem !important;
+}
+
 .container-home {
     width: 100% !important;
-    height: 50rem !important;
 }
 
 .inicioHome {
@@ -52,11 +55,28 @@ color: #ff904c !important;
     font-family: 'Trocchi', serif !important;
 }
 
+.btnModal:hover {
+    background-color: #1a1818 !important;
+    color: #fff !important;
+}
+
+
+
 .btnVerpost {
     background-color: #fff;
+    color: #1a1818 !important;
     margin-left: 3px;
     width: 10rem;
     font-family: 'Trocchi', serif !important;
+    text-decoration: none !important;
+    border-radius: 2px !important;
+    
+}
+
+
+.btnVerpost button:hover {
+    background-color: #1a1818 !important;
+    color: #fff !important;
 }
 
 .btnVerpost button {
@@ -64,7 +84,19 @@ color: #ff904c !important;
     align-items: center;
     font-size: 12px !important;
     text-transform: uppercase;
-	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	transition: none;	
 	cursor: pointer;
 	user-select: none;
+    color: #1a1818 !important;
+    border: 1px solid rgb(255, 255, 255) !important; 
+    width: 100% !important;
+}
+
+.textDecorationNone {
+    text-decoration: none !important;
+}
+
+
+.tabHome {
+    height: 30rem;
 }

@@ -36,7 +36,7 @@ function Home() {
                                     <ModalPostagem />
                                 </Box>
                                 <Box className="btnVerpost">
-                                <Link to="/Postagem">
+                                <Link className='textDecorationNone' to="/Postagem">
                                     <Button className='btnVerPost'>Ver Postagens</Button>
                                 </Link>
                                 </Box>
@@ -45,6 +45,9 @@ function Home() {
                     <Box className="imgHome">
                         <img src="https://i.ibb.co/cN5gh16/Design-sem-nome-36.png" alt="" />
                     </Box>
+                </Box>
+                <Box className="tabHome">
+                    <TabPostagem />
                 </Box>
 
             </Box>
