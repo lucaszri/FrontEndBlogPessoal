@@ -46,25 +46,11 @@ function Navbar() {
                         </Typography>
                     </Box>
                 </Link>
-                <Link to='/Postagem' className='text-decoration-none'>
-                    <Box className='borda-btn'>
-                    <Typography>
-                        Postagens
-                    </Typography>
-                    </Box>
-                    </Link>
                 
-                <Box className='borda-btn'>
-                <Link to='/Tema' className='text-decoration-none'>
-                    <Typography>
-                        Temas
-                    </Typography>
-                </Link>
-                </Box>
                 <Box className='borda-btn'>
                 <Link to='/formularioTema' className='text-decoration-none'>
                     <Typography>
-                        Cadastrar temas
+                        Cadastrar tema
                     </Typography>
                     </Link>
                 </Box >

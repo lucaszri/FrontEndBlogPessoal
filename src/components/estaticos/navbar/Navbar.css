@@ -5,14 +5,13 @@
 .navbar-barra {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(26, 24, 24);
-    height: 100% !important; 
+    background-color: rgb(26, 24, 24); 
 }
 
 .itens-navbar {
     display: flex;
     justify-items: center;
-    width: 52%;
+    width: 35%;
     justify-content:space-around; 
 }
 
