@@ -69,7 +69,7 @@ function DeletarPostagem() {
         }
       
         function nao() {
-          history('/Postagem')
+          history('/home')
         }
 return (
   <>

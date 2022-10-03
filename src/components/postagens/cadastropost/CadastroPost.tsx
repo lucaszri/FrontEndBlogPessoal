@@ -128,7 +128,7 @@ function CadastroPost() {
     }
 
     function back() {
-        history('/Postagem')
+        history('/home')
     }
 
     return (
