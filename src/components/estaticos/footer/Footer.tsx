@@ -18,7 +18,7 @@ function Footer() {
 
   if (token != '') {
     footerComponent = <Grid className='container-footer' container direction="row" justifyContent="center" alignItems="center">
-      <Grid className='container-footer' alignItems="center" item xs={12}>
+      <Grid className='container-footer' alignItems="center">
         <Box>
           <Box display="flex" alignItems="center" justifyContent="center">
             <Typography >Me siga nas redes sociais </Typography>
