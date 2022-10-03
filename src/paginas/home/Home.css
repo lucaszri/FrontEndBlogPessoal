@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {
-    height: 200rem !important;
+    background-color: #1a1818;
 }
 
 .container-home {
-    width: 100% !important;
+    width: 100vw !important;
+    
 }
 
 .inicioHome {

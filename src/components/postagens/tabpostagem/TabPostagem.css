@@ -22,12 +22,12 @@
 
 
 .btnMargin {
-    margin-right: 1rem !important;
+    margin-right: 0rem !important;
 }
 
 .btnMargin:hover {
     background-color: #1a1818 !important;
     color: #ff904c !important;
-    letter-spacing: 1px;
+    
 }
 

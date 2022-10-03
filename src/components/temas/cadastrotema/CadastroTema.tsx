@@ -105,7 +105,7 @@ function CadastroTema() {
         }
     
         function back() {
-            history('/Tema')
+            history('/home')
         }
   
     return (
