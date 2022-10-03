@@ -31,3 +31,21 @@
     
 }
 
+.sobreHome p {
+    color: #fff !important;
+    font-family: 'Trocchi', serif !important;
+}
+
+.sobremimh1 {
+    font-size: 22px !important;
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 1% !important;
+}
+
+.sobremimTxt {
+    font-size: 14px !important;
+    text-align: justify;
+    margin-top: 1% !important;
+    margin-bottom: 1% !important;
+}
