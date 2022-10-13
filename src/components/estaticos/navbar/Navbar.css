@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script&family=IBM+Plex+Serif&family=Lobster+Two&family=Luckiest+Guy&family=Playfair+Display:wght@400;800&family=Smooch+Sans:wght@100&family=Vollkorn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
 
+.barra {
+    height: 2.5rem;
+    align-items: center;
+    width: 98%;
+    
+}
 
 .navbar-barra {
     display: flex;
     justify-content: space-between;
     background-color: rgb(26, 24, 24); 
+    width: 98%;
 }
 
 .itens-navbar {

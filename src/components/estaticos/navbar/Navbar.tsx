@@ -33,7 +33,8 @@ function Navbar() {
     var navbarComponent;
 
     if(token != "") {
-        navbarComponent = <AppBar>
+        navbarComponent = 
+        <Box className="barra">
         <Toolbar className='navbar-barra'>
             <Box className='img-navbar'>
                     <img src="https://i.ibb.co/P6fcyZT/Logotipo-empresa-de-programa-o-sistemas-e-tecnologia-3.png" alt="" />
@@ -63,7 +64,8 @@ function Navbar() {
             </Box>
 
         </Toolbar>
-    </AppBar>
+    </Box>
+    
     }
     
     return (
